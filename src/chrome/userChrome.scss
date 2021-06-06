@@ -1,0 +1,26 @@
+#TabsToolbar {
+    background-color: -moz-accent-color !important;
+
+    #tabbrowser-tabs tab {
+        padding: 0 !important;
+
+        .tab-background {
+            border-radius: 0 !important;
+
+            &[selected="true"] {
+                border-top-style: solid !important;
+                border-top-width: 2px !important;
+                border-top-color: #00a2ed !important;
+            }
+        }
+
+        &:not([pinned="true"]) .tab-background {
+            margin: 0 !important;
+        }
+    }
+}
+
+:root toolbox {
+    --tab-min-height: 20px;
+    --tab-border-radius: 0px;
+}
